@@ -24,4 +24,5 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 [x] make input for comments and button for next
 [x] store comments in reducer
 [] make a "review your feedback" page with submit button
-[] sumbit button transfer to new page that thanks them, and bring the, back to the first page
+[] sumbit button transfer to new page that thanks them, and bring them back to the first page
+[] input validation for all inputs except "Comments"
