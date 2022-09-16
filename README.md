@@ -10,7 +10,7 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 
 [x] get server running
 [x] set up data base
-[] set up reducer store
+[x] set up reducer store
 [] make "how are you feeling" form
 [] make input for feelings and button for next
 [] store feelings in reducer
