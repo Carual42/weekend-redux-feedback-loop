@@ -11,12 +11,12 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 [x] get server running
 [x] set up data base
 [x] set up reducer store
-[] make "how are you feeling" form
-[] make input for feelings and button for next
-[] store feelings in reducer
-[] make "how well are you understanding" form
-[] make input for understanding and button for next
-[] store understanding in reducer
+[x] make "how are you feeling" form
+[x] make input for feelings and button for next
+[x] store feelings in reducer
+[x] make "how well are you understanding" form
+[x] make input for understanding and button for next
+[x] store understanding in reducer
 [] make "how well are you being supported" form
 [] make input for support and button for next
 [] store support in reducer
