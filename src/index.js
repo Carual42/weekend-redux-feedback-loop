@@ -20,19 +20,19 @@ const understanding = (state = '', action) => {
     return state;
 }
 
-// const support =(state='', action) => {
-//     if(action.type === 'SET_SUPPORT') {
-//         return action.payload;
-//     }
-//     return state;
-// }
+const support =(state='', action) => {
+    if(action.type === 'SET_SUPPORT') {
+        return action.payload;
+    }
+    return state;
+}
 
-// const comment =(state='', action) => {
-//     if(action.type === 'SET_COMMENT') {
-//         return action.payload;
-//     }
-//     return state;
-// }
+const comment =(state='', action) => {
+    if(action.type === 'SET_COMMENT') {
+        return action.payload;
+    }
+    return state;
+}
 
 // Redux store! Keeps track of all reducers
 const storeInstance = createStore(
@@ -41,8 +41,8 @@ const storeInstance = createStore(
         {
             feeling,
             understanding,
-            // support,
-            // comment,
+            support,
+            comment,
         }
     ),
     applyMiddleware()
