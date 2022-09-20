@@ -10,6 +10,7 @@ import Understanding from '../Understanding';
 import Support from '../Support';
 import Comment from '../Comment';
 import Review from '../Review';
+import Submit from '../Submit';
 
 function App() {
 
