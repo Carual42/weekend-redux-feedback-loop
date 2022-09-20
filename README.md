@@ -25,6 +25,6 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 [x] store comments in reducer
 [x] make a "review your feedback" page with submit button
 [x] sumbit button transfer to new page that thanks them, and bring them back to the first page
-[] make router
-[] post request in Review.jsx to send data to router
-[] input validation for all inputs except "Comments"
+[x] make router
+[x] post request in Review.jsx to send data to router
+[x] input validation for all inputs except "Comments"

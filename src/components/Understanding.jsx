@@ -14,6 +14,14 @@ function Understanding() {
       dispatch({type: 'SET_UNDERSTANDING', payload: event.target.value});
   }
 
+  const nextBtn = (event) => {
+    if (understanding.length === 0){
+        alert('enter a number')
+    } else {
+        history.push('/support')
+    }
+  }
+
   return (
     <div className='understanding'>
       <header className='App-header'>
@@ -25,8 +33,8 @@ function Understanding() {
       </h2>
       <br />
       <h6>understanding?</h6>
-      <input value={understanding} onChange={handleChange} className="input" type="text" />
-      <button onClick={() => history.push('/support')} className="button">Next</button>
+      <input value={understanding} onChange={handleChange} className="input" type="number" />
+      <button onClick={nextBtn} className="button">Next</button>
     </div>
   );
 }

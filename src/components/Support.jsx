@@ -14,6 +14,14 @@ function Support() {
       dispatch({type: 'SET_SUPPORT', payload: event.target.value});
   }
 
+  const nextBtn = (event) => {
+    if (support.length === 0){
+        alert('enter a number')
+    } else {
+        history.push('/comment')
+    }
+  }
+
   return (
     <div className='support'>
       <header className='App-header'>
@@ -25,8 +33,8 @@ function Support() {
       </h2>
       <br />
       <h6>Support?</h6>
-      <input value={support} onChange={handleChange} className="input" type="text" />
-      <button onClick={() => history.push('/comment')} className="button">Next</button>
+      <input value={support} onChange={handleChange} className="input" type="number" />
+      <button onClick={nextBtn} className="button">Next</button>
     </div>
   );
 }

@@ -13,6 +13,13 @@ function Feeling() {
   const handleChange = (event) => {
       dispatch({type: 'SET_FEELING', payload: event.target.value});
   }
+  const nextBtn = (event) => {
+    if (feeling.length === 0){
+        alert('enter a number')
+    } else {
+        history.push('/understanding')
+    }
+  }
 
   return (
     <div className='understanding'>
@@ -25,8 +32,8 @@ function Feeling() {
       </h2>
       <br />
       <h6>feeling?</h6>
-      <input value={feeling} onChange={handleChange} className="input" type="text" />
-      <button onClick={() => history.push('/understanding')} className="button">Next</button>
+      <input value={feeling} onChange={handleChange} className="input" type="number" />
+      <button onClick={nextBtn} className="button">Next</button>
     </div>
   );
 }
