@@ -7,7 +7,7 @@ function Understanding() {
 
   const history= useHistory();
 
-  const understanding = useSelector(store => store.name);
+  const understanding = useSelector(store => store.understanding);
   const dispatch = useDispatch();
 
   const handleChange = (event) => {

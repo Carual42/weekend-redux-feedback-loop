@@ -7,7 +7,7 @@ function Support() {
 
   const history= useHistory();
 
-  const support = useSelector(store => store.name);
+  const support = useSelector(store => store.support);
   const dispatch = useDispatch();
 
   const handleChange = (event) => {

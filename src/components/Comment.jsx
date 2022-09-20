@@ -7,11 +7,11 @@ function Comment() {
 
   const history= useHistory();
 
-  const comment = useSelector(store => store.name);
+  const comment = useSelector(store => store.comment);
   const dispatch = useDispatch();
 
   const handleChange = (event) => {
-      dispatch({type: 'SET_SUPPORT', payload: event.target.value});
+      dispatch({type: 'SET_COMMENT', payload: event.target.value});
   }
 
   return (

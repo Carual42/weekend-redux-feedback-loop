@@ -7,7 +7,7 @@ function Feeling() {
 
   const history = useHistory();
 
-  const feeling = useSelector(store => store.name);
+  const feeling = useSelector(store => store.feeling);
   const dispatch = useDispatch();
 
   const handleChange = (event) => {
