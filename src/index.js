@@ -8,21 +8,27 @@ import { Provider } from 'react-redux';
 
 const feeling = (state = '', action) => {
     if (action.type === 'SET_FEELING') {
-        return action.payload;
+        return Number(action.payload);
+    } else if (action.type === 'CLEAR_ALL') {
+        return '';
     }
     return state;
 }
 
 const understanding = (state = '', action) => {
     if (action.type === 'SET_UNDERSTANDING') {
-        return action.payload;
+        return Number(action.payload);
+    } else if (action.type === 'CLEAR_ALL') {
+        return '';
     }
     return state;
 }
 
 const support = (state='', action) => {
     if(action.type === 'SET_SUPPORT') {
-        return action.payload;
+        return Number(action.payload);
+    } else if (action.type === 'CLEAR_ALL') {
+        return '';
     }
     return state;
 }
@@ -30,6 +36,8 @@ const support = (state='', action) => {
 const comment = (state='', action) => {
     if(action.type === 'SET_COMMENT') {
         return action.payload;
+    } else if (action.type === 'CLEAR_ALL') {
+        return '';
     }
     return state;
 }
